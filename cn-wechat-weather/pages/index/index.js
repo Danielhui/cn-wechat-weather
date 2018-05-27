@@ -20,7 +20,8 @@ Page({
   data:{
     nowTemp:'14',
     nowWeather:"多云",
-    nowWeatherBackground:""
+    nowWeatherBackground:"",
+    forecast:[]
   },
   onPullDownRefresh(){
     this.getNow(() =>{
@@ -51,7 +52,23 @@ Page({
           frontColor: '#000000',
           backgroundColor: weatherColorMap[weather],
         })
+
+        let nowHour = new Date().getHours()
+        console.log(nowHour)
+        let forecast = []
+        for (let i = 0; i<24;i += 3){
+          forecast.push({
+            time: (i+ nowHour)%24 + '时',
+            iconPath: '/images/sunny-icon.png',
+            temp:"12*"
+          })
+        }
+        forrcast[0].time = '现在'
+        this.setData({
+          forecast:forecast,
+        })
       },
+
       complete:() => {
         callback && callback()
       }
