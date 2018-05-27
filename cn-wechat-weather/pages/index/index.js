@@ -63,7 +63,7 @@ Page({
             temp:"12*"
           })
         }
-        forrcast[0].time = '现在'
+        forecast[0].time = '现在'
         this.setData({
           forecast:forecast,
         })
