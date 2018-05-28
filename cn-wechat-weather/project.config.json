@@ -25,14 +25,17 @@
 			"list": []
 		},
 		"miniprogram": {
+<<<<<<< HEAD
 			"current": -1,
 <<<<<<< HEAD
+=======
+			"current": 0,
+>>>>>>> parent of b30b9f1... 2-1
 			"list": [
 				{
 					"id": -1,
 					"name": "dev start on second page",
-					"pathName": "pages/list/list",
-					"query": ""
+					"pathName": "pages/list/list"
 				}
 			]
 =======
