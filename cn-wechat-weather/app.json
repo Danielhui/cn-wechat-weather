@@ -1,13 +1,12 @@
 {
-  "pages": [
-    "pages/index/index",
-    "pages/list/list"
+  "pages":[
+    "pages/index/index"
   ],
-  "window": {
-    "backgroundTextStyle": "light",
+  "window":{
+    "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#cbeefd",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black",
+    "navigationBarTextStyle":"black",
     "enablePullDownRefresh": true
   }
 }

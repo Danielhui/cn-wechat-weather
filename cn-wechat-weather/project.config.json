@@ -20,16 +20,13 @@
 			"current": -1,
 			"list": []
 		},
-		"plugin": {
-			"current": -1,
-			"list": []
-		},
 		"game": {
 			"currentL": -1,
 			"list": []
 		},
 		"miniprogram": {
 			"current": -1,
+<<<<<<< HEAD
 			"list": [
 				{
 					"id": -1,
@@ -38,6 +35,9 @@
 					"query": ""
 				}
 			]
+=======
+			"list": []
+>>>>>>> parent of 955a31f... 1-6
 		}
 	}
 }
