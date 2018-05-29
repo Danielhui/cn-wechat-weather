@@ -1,7 +1,12 @@
-<view class = "weather-wrapper" >
+<view class="weather-wrapper">
   <view class="temp">{{nowTemp}}</view>
-  <view class='weather'>{{nowWeather}}</view>
+  <view class="weather">{{nowWeather}}</view>
   <image class="weather-bg" src="{{nowWeatherBackground}}" mode="scaleToFill"></image>
+  <view class="day-weather" bindtap='onTapDayWeather'>
+    <view class="day-text">{{todayDate}}</view>
+    <view class="temp-text">{{todayTemp}}</view>
+  <image class="arrow-icon" src="/images/arrow.png"></image>
+  </view>
 </view>
 
 <view class="timetips">
@@ -10,10 +15,12 @@
  </view>
 
 <scroll-view scroll-x>
-  <view class = "forecast-list">
-    <view class='forecast-item' wx:for = "{{forecast}}"> 
+  <view class='forecast-list'>
+    <view class="forecast-item" wx:for="{{hourlyWeather}}">
       <view class= 'forecast-time'>{{item.time}}</view>
-      <image class= 'forecast-weather' src='{{item.iconPath}}'></image>
+      <image class= 'forecast-weather'
+             src='{{item.iconPath}}'>
+      </image>
       <view class= 'forecast-temp'>{{item.temp}}</view>
     </view>
   </view>
